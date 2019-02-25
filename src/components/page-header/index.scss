@@ -1,0 +1,123 @@
+$root: ".page-header";
+
+#{$root} {
+	position: relative;
+	display: grid;
+	z-index: 2;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr 2fr 1fr;
+
+	&__background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: skewY(-8deg);
+		transform-origin: top left;
+		background: $klp-primary-color-dark;
+		z-index: 1;
+	}
+
+	&__copy {
+		position: relative;
+		grid-column: 2/6;
+		grid-row: 2/3;
+		padding: 3em 0;
+		color: $klp-primary-color-light;
+		z-index: 3;
+	}
+
+	&__image {
+		height: 100%;
+		background: #f7f2f1 url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/5438382ee4b04156f923058a/547c9b37e4b0a1e9ef8e955a/1417452350473/Two+Tone+Beanie+Model.jpg?format=1500w") no-repeat;
+		background-position: 20% bottom;
+		background-size: cover;
+		grid-column: 7/12;
+		grid-row: 2/4;
+		box-shadow: 0 4px 70px rgba(0, 0, 0, .2);
+		z-index: 2;
+	}
+
+	&__nav {
+		position: relative;
+		display: grid;
+		grid-column: 2/12;
+		grid-row: 1/2;
+		grid-template-columns: 3fr 1fr;
+		align-items: center;
+		z-index: 3;
+	}
+
+	&__logo {
+		transition: all .2s ease-in-out;
+		color: $klp-secondary-color;
+		font-family: $klp-font-mono;
+		font-size: 1.5em;
+		font-weight: 400;
+		letter-spacing: .15em;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $klp-primary-color-light;
+		}
+	}
+
+	&__nav_links_wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 4em;
+		align-items: center;
+	}
+
+	&__nav_link {
+		color: $klp-primary-color-light;
+		font-size: 1.1em;
+		letter-spacing: .1em;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px rbga(255, 255, 255, .4);
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 700px) {
+	$klp-section-padding: 40px;
+
+	p,
+	a {
+		font-size: 1.3em;
+	}
+
+	#{$root} {
+		&__nav {
+			grid-column: 1/13;
+			background: rgba(0, 0, 0, 0.7);
+
+			div {
+				grid-column: 1/3;
+				text-align: center;
+			}
+		}
+
+		&__nav_links_wrapper {
+			display: none;
+		}
+
+		&__copy {
+			grid-column: 1/13;
+			grid-row: 2/4;
+			padding: 0 $klp-section-padding 5em;
+			background: rgba(0, 0, 0, .7);
+			text-align: center;
+			z-index: 3;
+		}
+
+		&__image {
+			grid-column: 1/13;
+			grid-row: 1/4;
+			box-shadow: none;
+			z-index: 2;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+// ***********************************************************
+// Uncomment the theme you wish to see applied
+// ***********************************************************
+
+// colors (base)
+// $klp-primary-color-dark: #1e283a;
+// $klp-primary-color-light: #fff;
+// $klp-secondary-color: #eca72c;
+// $klp-tertiary-color: #ef4700;
+// $klp-tertiary-color-dark: #d83200;
+// $klp-new-label-color: #028250;
+
+// colors (theme 1)
+// $klp-primary-color-dark: #303036;
+// $klp-primary-color-light: #fffaff;
+// $klp-secondary-color: #4a90e2;
+// $klp-tertiary-color: lighten($klp-secondary-color, 10%);
+// $klp-tertiary-color-dark: darken($klp-secondary-color, 10%);
+// $klp-new-label-color: lighten($klp-primary-color-dark, 45%);
+
+// colors (theme 2)
+// $klp-primary-color-dark: #544343;
+// $klp-primary-color-light: #e6e4e4;
+// $klp-secondary-color: #db5461;
+// $klp-tertiary-color: #a18276;
+// $klp-tertiary-color-dark: darken($klp-tertiary-color, 15%);
+// $klp-new-label-color: #9b8816;
+
+// colors (theme 3)
+$klp-primary-color-dark: #000022;
+$klp-primary-color-light: #fbf5f3;
+$klp-secondary-color: #c42847;
+$klp-tertiary-color: #e28413;
+$klp-tertiary-color-dark: darken($klp-tertiary-color, 4%);
+$klp-new-label-color: lighten($klp-primary-color-dark, 20%);

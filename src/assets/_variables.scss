@@ -1,0 +1,11 @@
+$klp-scope: ".klp-scope";
+
+// page
+$klp-section-padding: 50px;
+
+// fonts
+$klp-font-mono: "Inconsolata", monospace;
+$klp-font-sans: "Montserrat", sans-serif;
+
+@import "theme";
+@import "mixins";

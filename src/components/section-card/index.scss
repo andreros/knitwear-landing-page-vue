@@ -1,0 +1,81 @@
+$root: ".section-card";
+
+#{$root} {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	&.teaserYarns {
+		#{$root} {
+			&__image {
+				width: 100%;
+				height: 450px;
+				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/t/547ca011e4b0a1e9ef8eacd5/1417453594003/armful+of+yarn.jpg?format=2500w") no-repeat;
+				background-position: center center;
+				background-size: cover;
+				grid-column: 1/7;
+			}
+
+			&__copy {
+				grid-column: 8/12;
+			}
+		}
+	}
+
+	&.teaserAccessories {
+		#{$root} {
+			&__image {
+				width: 100%;
+				height: 450px;
+				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/57d03c41e6f2e1d7acf3b3c7/57d040f0bebafbba56d9f35a/1473266171979/IMG_6868.JPG?format=2500w") no-repeat;
+				background-position: center 10%;
+				background-size: cover;
+				grid-column: 1/7;
+			}
+
+			&__copy {
+				grid-column: 8/12;
+			}
+		}
+	}
+
+	&.teaserPatterns {
+		#{$root} {
+			&__image {
+				width: 100%;
+				height: 450px;
+				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/57d03c41e6f2e1d7acf3b3c7/57d040f615d5db9669a92539/1473265916016/IMG_1824.JPG?format=2500w") no-repeat;
+				background-size: cover;
+				grid-column: 7/13;
+				grid-row: 1/2;
+			}
+
+			&__copy {
+				grid-column: 2/6;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	#{$root} {
+		&.mobileCenter {
+			grid-template-rows: 1fr 1fr;
+			text-align: center;
+
+			#{$root} {
+				&__image {
+					grid-column: 1/13;
+					grid-row: 1/2;
+					height: 100%;
+				}
+
+				&__copy {
+					grid-column: 2/12;
+					grid-row: 2/3;
+					margin-top: 2em;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

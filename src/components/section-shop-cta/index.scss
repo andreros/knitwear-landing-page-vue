@@ -1,0 +1,11 @@
+$root: ".section-shop-cta";
+
+#{$root} {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-right: $klp-section-padding;
+	padding-left: $klp-section-padding;
+	background: $klp-secondary-color;
+	text-align: center;
+}

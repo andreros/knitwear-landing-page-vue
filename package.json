@@ -1,0 +1,45 @@
+{
+    "name": "knitwear-landing-page",
+    "description": "Knitwear Landing Page (CSS Grid, Flexbox, AOS Scrolling Animations)",
+    "contributors": [
+        "André Rosa <andreros@gmail.com>"
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+        "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    },
+    "dependencies": {
+        "aos": "^2.3.4",
+        "stylelint-config-recommended-scss": "^3.2.0",
+        "stylelint-config-standard": "^18.2.0",
+        "vue": "^2.5.17",
+        "vue-router": "^3.0.2"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ],
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-3": "^6.24.1",
+        "cross-env": "^5.2.0",
+        "css-loader": "^0.28.11",
+        "file-loader": "^2.0.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0",
+        "stylelint": "^9.9.0",
+        "stylelint-config-sass-guidelines": "^5.3.0",
+        "stylelint-order": "^2.0.0",
+        "stylelint-scss": "^3.4.4",
+        "vue-loader": "^13.7.3",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^3.12.0",
+        "webpack-dev-server": "^2.11.3"
+    }
+}

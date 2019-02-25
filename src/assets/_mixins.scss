@@ -1,0 +1,30 @@
+@mixin h1Text {
+	color: $klp-primary-color-light;
+	font-family: $klp-font-sans;
+	font-size: 4em;
+	font-weight: 100;
+	line-height: 1.25em;
+}
+
+@mixin h2Text {
+	color: $klp-primary-color-dark;
+	font-family: $klp-font-sans;
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+@mixin h3Text {
+	color: $klp-primary-color-dark;
+	font-family: $klp-font-sans;
+	font-size: 2em;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+@mixin bodyText {
+	font-family: $klp-font-mono;
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 1.75em;
+}

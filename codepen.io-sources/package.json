@@ -1,0 +1,26 @@
+{
+    "name": "knitwear-landing-page",
+    "version": "0.1.0",
+    "description": "Knitwear Landing Page (CSS Grid, Flexbox, AOS Scrolling Animations)",
+    "main": "index.html",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build:scss"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "browser-sync": "^2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.1.0",
+        "gulp-sass": "^3.1.0"
+    },
+    "keywords": [
+        "knitwear",
+        "landing",
+        "page"
+    ],
+    "contributors": [
+        "André Rosa <andreros@gmail.com>"
+    ],
+    "license": "MIT"
+}
