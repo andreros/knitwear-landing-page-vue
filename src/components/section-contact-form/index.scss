@@ -26,6 +26,19 @@ $root: ".section-contact-form";
 		&--half {
 			width: calc((100% - 30px) / 2);
 		}
+
+		&--error {
+			#{$root} {
+				&__input {
+					box-shadow: $klp-box-shadow-error;
+				}
+
+				&__input_focus::before {
+					width: 100%;
+					background: $klp-error-color;
+				}
+			}
+		}
 	}
 
 	&__input {

@@ -1,12 +1,14 @@
 $klp-scope: ".klp-scope";
 
+@import "theme";
+
 // page
 $klp-section-padding: 50px;
 $klp-box-shadow: 0 4px 50px rgba(0, 0, 0, .2);
+$klp-box-shadow-error: 0 4px 20px rgba($klp-error-color, .4);
 
 // fonts
 $klp-font-mono: "Inconsolata", monospace;
 $klp-font-sans: "Montserrat", sans-serif;
 
-@import "theme";
 @import "mixins";
