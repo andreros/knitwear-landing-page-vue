@@ -3,6 +3,7 @@ $root: ".page-header";
 #{$root} {
 	position: relative;
 	display: grid;
+	min-height: 512px;
 	z-index: 2;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 1fr 2fr 1fr;
@@ -21,6 +22,8 @@ $root: ".page-header";
 
 	&__copy {
 		position: relative;
+		display: flex;
+		align-items: center;
 		grid-column: 2/6;
 		grid-row: 2/3;
 		padding: 3em 0;
@@ -35,7 +38,7 @@ $root: ".page-header";
 		background-size: cover;
 		grid-column: 7/12;
 		grid-row: 2/4;
-		box-shadow: 0 4px 70px rgba(0, 0, 0, .2);
+		box-shadow: $klp-box-shadow;
 		z-index: 2;
 	}
 

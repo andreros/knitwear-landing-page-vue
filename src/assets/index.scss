@@ -5,6 +5,7 @@
 html,
 body {
 	width: 100%;
+	min-width: 320px;
 	height: 100%;
 	margin: 0;
 }
@@ -59,7 +60,7 @@ a {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	box-shadow: 0px 4px 30px rgba(0, 0, 0, .2);
+	box-shadow: $klp-box-shadow;
 	cursor: pointer;
 
 	&:hover {
