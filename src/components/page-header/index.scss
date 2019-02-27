@@ -74,6 +74,12 @@ $root: ".page-header";
 		align-items: center;
 	}
 
+	#{$root}__nav_link_wrapper {
+		&:first-child {
+			display: none;
+		}
+	}
+
 	&__nav_menu {
 		display: none;
 	}
@@ -124,6 +130,10 @@ $root: ".page-header";
 
 		&__nav_link_wrapper {
 			width: 100%;
+
+			&:first-child {
+				display: inherit !important;
+			}
 		}
 
 		&__nav_menu {
@@ -147,6 +157,7 @@ $root: ".page-header";
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			width: 100%;
 			height: 80px;
 			background: rgba(0, 0, 0, .7);
 

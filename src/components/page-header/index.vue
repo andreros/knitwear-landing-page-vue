@@ -10,6 +10,9 @@
 			</a>
 			<div ref="linksContainer" class="page-header__nav_links_container">
 				<div class="page-header__nav_link_wrapper" @click="toggleMenu">
+					<router-link to="/" class="page-header__nav_link">Home</router-link>
+				</div>
+				<div class="page-header__nav_link_wrapper" @click="toggleMenu">
 					<router-link to="/about" class="page-header__nav_link">About</router-link>
 				</div>
 				<div class="page-header__nav_link_wrapper" @click="toggleMenu">
