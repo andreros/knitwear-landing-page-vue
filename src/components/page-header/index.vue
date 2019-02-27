@@ -45,6 +45,8 @@ export default {
 	},
 	methods: {
 		toggleMenu() {
+			// make sure this only happens in mobile situations
+			if (window.innerWidth > 700) { return; }
 			if (!this.$refs.menu) { return; }
 
 			if (this.$refs.menu.style.display !== 'none') {

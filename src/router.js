@@ -16,7 +16,26 @@ const routes = [
 const router = new VueRouter({
 	mode: 'hash',
 	base: __dirname,
-	routes
+	routes,
+	scrollBehavior (to, from, savedPosition) {
+		switch (to.hash) {
+			case '#story':
+				if (window.innerWidth <= 700) { return { x: 0, y: 650 } }
+				return { x: 0, y: 700 }
+			break;
+			case '#mission':
+				if (window.innerWidth <= 700) { return { x: 0, y: 1600 } }
+				return { x: 0, y: 1300 }
+			break;
+			case '#promise':
+				if (window.innerWidth <= 700) { return { x: 0, y: 2550 } }
+			return { x: 0, y: 1900 }
+			break;
+			default:
+				return { x: 0, y: 0 }
+			break;
+		}
+	}
 });
 
 export default router;

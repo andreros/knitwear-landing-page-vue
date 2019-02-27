@@ -3,17 +3,17 @@
 		<div class="page-footer__links_container">
 			<div class="page-footer__links">
 				<p>Shop</p>
-				<a href="#">Yarns</a>
-				<a href="#">Hats</a>
-				<a href="#">Scarves</a>
-				<a href="#">Stockists</a>
+				<router-link to="/shop">Yarns</router-link>
+				<router-link to="/shop">Hats</router-link>
+				<router-link to="/shop">Scarves</router-link>
+				<router-link to="/shop">Stockists</router-link>
 			</div>
 			<div class="page-footer__links">
-				<p>About Us</p>
-				<router-link to="/about">Story</router-link>
-				<router-link to="/about">Mission</router-link>
-				<router-link to="/about">Promise</router-link>
-				<router-link to="/about">Vibe</router-link>
+				<p><router-link to="/about">About Us</router-link></p>
+				<router-link to="/about#story">Story</router-link>
+				<router-link to="/about#mission">Mission</router-link>
+				<router-link to="/about#promise">Promise</router-link>
+				<router-link to="/contact">Contact</router-link>
 			</div>
 		</div>
 		<div class="page-footer__newsletter">
