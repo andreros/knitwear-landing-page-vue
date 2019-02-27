@@ -1,6 +1,11 @@
 # Knitwear Landing Page
 
-Practicing CSS Grid implementation with a simple responsive landing page for a small knitwear brand. Uses Grid & Flexbox, with AOS scrolling animations. Original project by [Lauren Chilcote](https://codepen.io/letsbleachthis/full/zewKYE).
+Practicing CSS Grid implementation with a simple responsive landing page for a small knitwear brand. Uses Grid & Flexbox, with AOS scrolling animations.
+Original project by [Lauren Chilcote](https://codepen.io/letsbleachthis/full/zewKYE).
+
+Feel free to try the page out in:
+
+[https://andreros.github.io/knitwear-landing-page-vue/](https://andreros.github.io/knitwear-landing-page-vue/).
 
 <br>
 
