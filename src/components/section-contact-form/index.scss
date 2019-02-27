@@ -7,6 +7,7 @@ $root: ".section-contact-form";
 		justify-content: space-between;
 		width: 100%;
 		padding: $klp-section-padding;
+		padding-bottom: 0;
 	}
 
 	&__form_title {
@@ -17,14 +18,33 @@ $root: ".section-contact-form";
 		text-align: left;
 	}
 
+	&__map_iframe {
+		width: 100%;
+		height: 400px;
+		border: none;
+		box-shadow: $klp-box-shadow;
+	}
+
+	&__address {
+		cursor: pointer;
+	}
+
 	&__input_wrapper {
 		position: relative;
 		width: 100%;
 		margin-bottom: $klp-section-padding;
 		border-bottom: 2px solid $klp-primary-color-light;
 
+		&--one-fourth {
+			width: calc((100% - 30px) / 3.6);
+		}
+
 		&--half {
 			width: calc((100% - 30px) / 2);
+		}
+
+		&--three-fourths {
+			width: calc((100% - 30px) / 1.4);
 		}
 
 		&--error {
@@ -93,7 +113,9 @@ $root: ".section-contact-form";
 @media (max-width: 700px) {
 	#{$root} {
 		&__input_wrapper {
-			&--half {
+			&--one-fourth,
+			&--half,
+			&--three-fourths {
 				width: 100%;
 			}
 		}
