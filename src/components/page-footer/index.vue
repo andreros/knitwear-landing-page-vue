@@ -10,10 +10,10 @@
 			</div>
 			<div class="page-footer__links">
 				<p>About Us</p>
-				<a href="#">Our Story</a>
-				<a href="#">Press</a>
-				<a href="#">Blog</a>
-				<a href="#">Jobs</a>
+				<router-link to="/about">Story</router-link>
+				<router-link to="/about">Mission</router-link>
+				<router-link to="/about">Promise</router-link>
+				<router-link to="/about">Vibe</router-link>
 			</div>
 		</div>
 		<div class="page-footer__newsletter">

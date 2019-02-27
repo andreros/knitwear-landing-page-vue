@@ -1,13 +1,13 @@
 <template>
 	<section class="section section-card mobileCenter" :class="type">
-		<div class="section-card__image"></div>
+		<div class="section-card__image" :style="getBackgroundImage"></div>
 		<div class="section-card__copy" data-aos="fade-up">
 			<div v-if="label != ''">
 				<span class="new">{{label}}</span>
 			</div>
 			<h3>{{title}}</h3>
 			<p>{{text}}</p>
-			<a href="#" class="button">{{cta}}</a>
+			<a v-if="cta != ''" href="#" class="button">{{cta}}</a>
 		</div>
 	</section>
 </template>
@@ -17,6 +17,10 @@ export default {
 	name: "SectionCard",
 	props: {
 		type: {
+			type: String,
+			default: ''
+		},
+		image: {
 			type: String,
 			default: ''
 		},
@@ -35,6 +39,12 @@ export default {
 		cta: {
 			type: String,
 			default: ''
+		}
+	},
+	computed: {
+		getBackgroundImage() {
+			if (this.image === '') { return; }
+			return "background-image: url('" + this.image + "')";
 		}
 	}
 };

@@ -24,32 +24,10 @@ $root: ".section-cards-row";
 
 		&_image {
 			width: 100%;
-			height: 250px;
+			height: 350px;
 			margin: 2em 0;
-		}
-
-		&:nth-of-type(1) {
-			#{$root}__grid_item_image {
-				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/57d03c41e6f2e1d7acf3b3c7/57d040f1bebafbba56d9f35d/1473265909906/IMG_1908.JPG?format=2500w") no-repeat;
-				background-position: -5% top;
-				background-size: 125%;
-			}
-		}
-
-		&:nth-of-type(2) {
-			#{$root}__grid_item_image {
-				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/57d03c41e6f2e1d7acf3b3c7/57d041e6b8a79bd46188f7d0/1473266157317/IMG_7650.JPG?format=2500w") no-repeat;
-				background-position: center center;
-				background-size: cover;
-			}
-		}
-
-		&:nth-of-type(3) {
-			#{$root}__grid_item_image {
-				background: url("https://static1.squarespace.com/static/5425ba71e4b007ffd6b55c47/5438382ee4b04156f923058a/5850426ed482e9af3126f43a/1511895748624/_AAA2732.jpg?format=2500w") no-repeat;
-				background-position: right bottom;
-				background-size: cover;
-			}
+			background-position: center center;
+			background-size: cover;
 		}
 	}
 }
