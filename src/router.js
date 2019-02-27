@@ -24,11 +24,11 @@ const router = new VueRouter({
 				return { x: 0, y: 700 }
 			break;
 			case '#mission':
-				if (window.innerWidth <= 700) { return { x: 0, y: 1600 } }
+				if (window.innerWidth <= 700) { return { x: 0, y: 1700 } }
 				return { x: 0, y: 1300 }
 			break;
 			case '#promise':
-				if (window.innerWidth <= 700) { return { x: 0, y: 2550 } }
+				if (window.innerWidth <= 700) { return { x: 0, y: 2800 } }
 			return { x: 0, y: 1900 }
 			break;
 			default:
