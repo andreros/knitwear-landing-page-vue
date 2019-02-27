@@ -84,7 +84,7 @@ $root: ".page-footer";
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	#{$root} {
 		grid-template-rows: auto auto auto;
 
