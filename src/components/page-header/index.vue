@@ -45,6 +45,8 @@ export default {
 	},
 	methods: {
 		toggleMenu() {
+			if (!this.$refs.menu) { return; }
+
 			if (this.$refs.menu.style.display !== 'none') {
 				this.$refs.menu.style.display = 'none';
 				this.$refs.linksContainer.style.display = 'flex';
