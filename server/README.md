@@ -1,9 +1,9 @@
-# Node.js Static JSON API
+# Knitwear Landing Page Backend RESTful API
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/andreros/)
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-Knitwear Landing Page backend RESTful API.
+Knitwear Landing Page Backend RESTful API.
 
 
 ## Prerequisites
@@ -30,9 +30,9 @@ be started and accessible in the `http://localhost:5000/api/v1/` endpoint.
 
 Note: Please, refer to the code for the implementation details.
 
-| Verb | Endpoint | Description |
+| Verb | Endpoint | Parameters | Description |
 | --- | --- | --- |
-| `POST` | `/message` | Send an email message. |
+| `POST` | `/message` | name (String), email (String), message (String) | Send an email message. |
 
 
 ## Built With

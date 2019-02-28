@@ -18,15 +18,15 @@
     "devDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/andreros/knitwear-landing-page-vue"
+        "url": "https://github.com/andreros/knitwear-landing-page-vue/tree/master/server"
     },
-    "homepage": "https://github.com/andreros/knitwear-landing-page-vue#readme",
+    "homepage": "https://github.com/andreros/knitwear-landing-page-vue/tree/master/server#readme",
     "keywords": [
         "node",
         "nodejs",
         "express",
         "expressjs",
-        "mailer",
+        "nodemailer",
         "request",
         "api"
     ],
