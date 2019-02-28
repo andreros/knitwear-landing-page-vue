@@ -68,6 +68,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 	name: "SectionContactForm",
 	props: {
@@ -188,13 +190,34 @@ export default {
 			}
 			return isValid;
 		},
+		resetForm() {
+			this.$refs.nameField.value = '';
+			this.$refs.emailField.value = '';
+			this.$refs.messageField.value = '';
+			this.$refs.nameField.parentElement.classList.remove(this.classes.formFieldError);
+			this.$refs.emailField.parentElement.classList.remove(this.classes.formFieldError);
+			this.$refs.messageField.parentElement.classList.remove(this.classes.formFieldError);
+		},
 		submitForm() {
 			// form validation
 			const nameValid = this.validateField("nameField");
 			const emailValid = this.validateField("emailField");
 			const messageValid = this.validateField("messageField");
+			const that = this;
 			if (nameValid && emailValid && messageValid) {
 				// submit form...
+				axios.post('http://localhost:5000/api/v1/message', {
+					name: this.$refs["nameField"].value.trim(),
+					email: this.$refs["emailField"].value.trim(),
+					message: this.$refs["messageField"].value.trim()
+				})
+				.then(function (response) {
+					console.log("Response: ", response);
+					that.resetForm();
+				})
+				.catch(function (error) {
+					console.log("Error: ", error);
+				});
 			}
 		}
 	}

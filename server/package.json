@@ -1,0 +1,36 @@
+{
+    "name": "knitwear-landing-page-api",
+    "version": "1.0.0",
+    "description": "Knitwear Landing Page backend RESTful API.",
+    "main": "api.js",
+    "scripts": {
+        "start": "node api.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "nodemailer": "^5.1.1",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "request": "^2.85.0",
+        "underscore": "^1.8.3"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andreros/knitwear-landing-page-vue"
+    },
+    "homepage": "https://github.com/andreros/knitwear-landing-page-vue#readme",
+    "keywords": [
+        "node",
+        "nodejs",
+        "express",
+        "expressjs",
+        "mailer",
+        "request",
+        "api"
+    ],
+    "author": "André Rosa <andreros@gmail.com>",
+    "contributors": [],
+    "license": "Unlicense"
+}
