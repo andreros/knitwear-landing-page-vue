@@ -31,7 +31,7 @@ be started and accessible in the `http://localhost:5000/api/v1/` endpoint.
 Note: Please, refer to the code for the implementation details.
 
 | Verb | Endpoint | Parameters | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | `POST` | `/message` | name (String), email (String), message (String) | Send an email message. |
 
 
