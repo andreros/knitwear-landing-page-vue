@@ -1,0 +1,31 @@
+$root: ".notification";
+
+#{$root} {
+	width: 100%;
+	padding: 0;
+	transition: all .5s ease-in-out;
+	font-size: 1.2em;
+	box-shadow: $klp-box-shadow;
+	opacity: 0;
+
+	&--visible {
+		margin-bottom: $klp-section-padding;
+		padding: 20px;
+		opacity: 1;
+	}
+
+	&--success {
+		background-color: $klp-success-color;
+		color: $klp-primary-color-light;
+	}
+
+	&--alert {
+		background-color: $klp-alert-color;
+		color: $klp-primary-color-light;
+	}
+
+	&--error {
+		background-color: $klp-error-color;
+		color: $klp-primary-color-light;
+	}
+}

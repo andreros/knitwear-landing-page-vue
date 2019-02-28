@@ -28,6 +28,9 @@
 			<div class="section-contact-form__form_title">
 				<h2>{{contactsTitle}}</h2>
 			</div>
+			<div class="section-contact-form__notification_wrapper">
+				<notification ref="emailNotification" />
+			</div>
 			<div class="section-contact-form__input_wrapper section-contact-form__input_wrapper--half">
 				<input
 					ref="nameField"
@@ -68,10 +71,14 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
+import Notification from "../notification/index.vue";
 
 export default {
 	name: "SectionContactForm",
+	components: {
+		Notification
+	},
 	props: {
 		locationTitle: {
 			type: String,
@@ -213,10 +220,13 @@ export default {
 				})
 				.then(function (response) {
 					console.log("Response: ", response);
-					that.resetForm();
+					that.$refs.emailNotification.show("success", "Your message was sent successfully!", () => {
+						that.resetForm();
+					});
 				})
 				.catch(function (error) {
 					console.log("Error: ", error);
+					that.$refs.emailNotification.show("error", "There was an error sending your message. Please, try again later.");
 				});
 			}
 		}
