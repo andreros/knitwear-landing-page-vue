@@ -4,12 +4,13 @@ import VueRouter from 'vue-router'
 import Home from "./pages/home/index.vue";
 import About from "./pages/about/index.vue";
 import Contact from "./pages/contact/index.vue";
+import Gallery from "./pages/gallery/index.vue";
 
 const routes = [
 	{ path: '/', component: Home },
 	{ path: '/about', component: About },
 	{ path: '/contact', component: Contact },
-	{ path: '/shop', component: About },
+	{ path: '/gallery', component: Gallery },
 	{ path: '*', component: Home, redirect: '/' }
 ];
 

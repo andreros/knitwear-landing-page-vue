@@ -2,11 +2,11 @@
 	<footer class="page-footer">
 		<div class="page-footer__links_container">
 			<div class="page-footer__links">
-				<p>Shop</p>
-				<router-link to="/shop">Yarns</router-link>
-				<router-link to="/shop">Hats</router-link>
-				<router-link to="/shop">Scarves</router-link>
-				<router-link to="/shop">Stockists</router-link>
+				<p>Gallery</p>
+				<router-link to="/gallery">Yarns</router-link>
+				<router-link to="/gallery">Hats</router-link>
+				<router-link to="/gallery">Scarves</router-link>
+				<router-link to="/gallery">Stockists</router-link>
 			</div>
 			<div class="page-footer__links">
 				<p><router-link to="/about">About Us</router-link></p>

@@ -19,7 +19,7 @@
 					<router-link to="/contact" class="page-header__nav_link">Contact</router-link>
 				</div>
 				<div class="page-header__nav_link_wrapper" @click="toggleMenu">
-					<router-link to="/shop" class="page-header__nav_link button">Shop</router-link>
+					<router-link to="/gallery" class="page-header__nav_link button">Gallery</router-link>
 				</div>
 			</div>
 		</nav>
