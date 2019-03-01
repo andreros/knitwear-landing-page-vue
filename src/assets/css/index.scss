@@ -14,7 +14,7 @@ body {
 
 //Text Styles
 h1 {
-	@include h1Text;
+	@include klp-h1-text;
 
 	position: relative;
 	margin: 0;
@@ -22,11 +22,11 @@ h1 {
 }
 
 h2 {
-	@include h2Text;
+	@include klp-h2-text;
 }
 
 p {
-	@include bodyText;
+	@include klp-body-text;
 
 	a {
 		font-size: inherit;
@@ -34,7 +34,7 @@ p {
 }
 
 a {
-	@include bodyText;
+	@include klp-body-text;
 
 	transition: all .2s ease-in-out;
 	color: $klp-tertiary-color;
@@ -134,7 +134,7 @@ main {
 	padding: 4em 0;
 
 	h3 {
-		@include h3Text;
+		@include klp-h3-text;
 	}
 
 	.button {
@@ -155,6 +155,6 @@ main {
 #{$klp-scope} {
 	height: 100%;
 
-	@import "../pages/home/index.scss";
-	@import "../pages/about/index.scss";
+	@import "../../pages/home/index.scss";
+	@import "../../pages/about/index.scss";
 }

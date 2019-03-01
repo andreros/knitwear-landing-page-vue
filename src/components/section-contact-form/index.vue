@@ -72,6 +72,7 @@
 
 <script>
 import axios from "axios";
+import Configs from "../../configs.js";
 import Notification from "../notification/index.vue";
 
 export default {
@@ -187,8 +188,7 @@ export default {
 				this.$refs[field].parentElement.classList.remove(this.classes.formFieldError);
 			}
 			if (field === "emailField") {
-				const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/;
-				isValid = emailRegex.test(this.$refs[field].value.trim());
+				isValid = Configs.regex.email.test(this.$refs[field].value.trim());
 				if (!isValid) {
 					this.$refs[field].parentElement.classList.add(this.classes.formFieldError);
 				} else {
@@ -212,20 +212,20 @@ export default {
 			const messageValid = this.validateField("messageField");
 			const that = this;
 			if (nameValid && emailValid && messageValid) {
-				// submit form...
-				axios.post('http://localhost:5000/api/v1/message', {
+				// submit form
+				axios.post(Configs.apiUrl + '/message', {
 					name: this.$refs["nameField"].value.trim(),
 					email: this.$refs["emailField"].value.trim(),
 					message: this.$refs["messageField"].value.trim()
 				})
 				.then(function (response) {
-					console.log("Response: ", response);
+					//console.log("Response: ", response);
 					that.$refs.emailNotification.show("success", "Your message was sent successfully!", () => {
 						that.resetForm();
 					});
 				})
 				.catch(function (error) {
-					console.log("Error: ", error);
+					//console.log("Error: ", error);
 					that.$refs.emailNotification.show("error", "There was an error sending your message. Please, try again later.");
 				});
 			}
@@ -235,6 +235,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/_variables.scss";
+@import "../../assets/css/_variables.scss";
 @import "index.scss";
 </style>

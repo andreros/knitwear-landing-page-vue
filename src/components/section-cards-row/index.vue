@@ -92,6 +92,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/_variables.scss";
+@import "../../assets/css/_variables.scss";
 @import "index.scss";
 </style>
